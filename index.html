@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PooTube</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+        <link rel="stylesheet" href="/css/styles.css">
+
+    </head>
+    <body>
+        <div class="hero-img"></div>
+        <div class="wrapper">
+            <header>
+                <a href="#" class="logo">Web<span>Site</span></a>
+                
+                <nav>
+                    <svg class="close" viewBox="0 0 20 20">
+                        <path d="M10.185,1.417c-4.741,0-8.583,3.842-8.583,8.583c0,4.74,3.842,8.582,8.583,8.582S18.768,14.74,18.768,10C18.768,5.259,14.926,1.417,10.185,1.417 M10.185,17.68c-4.235,0-7.679-3.445-7.679-7.68c0-4.235,3.444-7.679,7.679-7.679S17.864,5.765,17.864,10C17.864,14.234,14.42,17.68,10.185,17.68 M10.824,10l2.842-2.844c0.178-0.176,0.178-0.46,0-0.637c-0.177-0.178-0.461-0.178-0.637,0l-2.844,2.841L7.341,6.52c-0.176-0.178-0.46-0.178-0.637,0c-0.178,0.176-0.178,0.461,0,0.637L9.546,10l-2.841,2.844c-0.178,0.176-0.178,0.461,0,0.637c0.178,0.178,0.459,0.178,0.637,0l2.844-2.841l2.844,2.841c0.178,0.178,0.459,0.178,0.637,0c0.178-0.176,0.178-0.461,0-0.637L10.824,10z"></path>
+                    </svg>
+        
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">About</a></li>
+
+                    </ul>
+                    
+                </nav>
+
+                <svg class="menu" viewBox="0 0 100 80" width="20" height="40">
+                    <rect width="100" height="15" rx="8"></rect>
+                    <rect y="30" width="100" height="15" rx="8"></rect>
+                    <rect y="60" width="100" height="15" rx="8"></rect>
+                
+                </svg>
+            </header>
+
+            <section class="hero">
+                <h1>Program the Future with words, words, words, words, turds and words.</h1>
+
+                <p class="subhead">Build a face-melting product.</p>
+                <p class="subhead b">Contact me and lets start building.</p>
+                
+                <svg class="down-arrow" width="24" height="294" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/>
+                </svg>
+            </section>
+
+            <section class="more-info">
+                <div class="feature left">
+                    <div class="content">
+                        <p class="title">Let's go on an adventure!</p>
+                        <p class="desc">Build <strong>REAL</strong> tools in a <strong>REAL</strong> environment with <strong>REAL</strong> people.</p>
+                    </div>
+                    <img src="images/tilted.png" alt="I look tilted">
+                </div>
+
+                <div class="feature">
+                    <div class="content">
+                        <p class="title">SHOES</p>
+                        <p class="desc">You put them on your feet</p>
+                    </div>
+                    <img src="images/bestshoes.webp" alt="I look tilted">
+                </div>
+
+                <div class="feature left">
+                    <div class="content">
+                        <p class="title">Music</p>
+                        <p class="desc">I will update this website every day!</p>
+                    </div>
+                    <img src="images/squier.jpg" alt="I look tilted">
+                </div>
+                <p>last modified: 12/03/2018</p>
+            </section>
+        </div>
+        <script>
+            const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('nav')
+
+            menu.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+            })
+
+            close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+            })
+        </script>
+    </body>
+</html>
